@@ -24,7 +24,7 @@ export const parseData = (data) => {
     },
   };
 
-  data.products.forEach((item) => {
+  data.forEach((item) => {
     // Поскольку мы ВИДИМО не можем доверять данным и можем получить null килограмм и пустую дату - делаем проверки
 
     if (!item.date) {
