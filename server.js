@@ -16,7 +16,8 @@ const prepareData = (data) => {
   }));
 }
 
-app.get('/products', cors({ origin: 'http://localhost:3000'}), function(req, res){
+app.get('/products', cors({ origin: '*'}), function(req, res){
+  console.error('/products');
   const errorHandler = (e) => {
     console.error(e);
     res.status(500);

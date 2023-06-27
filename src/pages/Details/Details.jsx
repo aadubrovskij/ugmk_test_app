@@ -22,7 +22,7 @@ export const Details = ({id}) => {
         name: 'Продукт 2',
         value: parsedData[parsedId].product2[parsedMonth - 1],
       },
-    ], [parsedData]);
+    ], [parsedData, parsedId]);
 
   if (parsedMonth < 1 || parsedMonth > 12) {
     return (

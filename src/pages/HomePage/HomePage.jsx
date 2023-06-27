@@ -16,7 +16,7 @@ export const HomePage = () => {
     if (!loadedSelectOptionId) {
       saveToLocalStorage(DEFAULT_SELECT_OPTION.value);
     }
-  }, []);
+  }, [loadedSelectOptionId]);
 
   const navigate = useNavigate();
 
